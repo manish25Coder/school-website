@@ -1,3 +1,3 @@
 export const environment = {
-    apiUrl: 'http://localhost:8001/api'
+    apiUrl: 'https://school-website-hub4dshns-manishs-projects-d3b3a879.vercel.app/api'
 };
