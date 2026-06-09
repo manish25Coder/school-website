@@ -26,6 +26,7 @@ export const routes: Routes = [
     {path:'disclaimer', component: Disclaimer},
     {path:'dashboard', component: Dashboard, canActivate:[authGuard]},
     {path:'login', component: Login},
-    {path:'**', redirectTo:'/home'},
+    {path:'**', redirectTo:''},
 
 ];
+
