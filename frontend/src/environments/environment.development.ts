@@ -1,3 +1,3 @@
 export const environment = {
-    apiUrl:'http://localhost:8001/api'
+    apiUrl:'https://school-website-9ptj.vercel.app/api'
 };
