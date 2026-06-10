@@ -39,9 +39,11 @@ app.use("/api/teacher",teacher)
 app.use("/api/auth",register)
 app.use("/api/auth",login)
 
-app.listen(PORT,()=>{
-    console.log(`Server is Running on http://localhost:${PORT}`);
-    
-})
+if (process.env.NODE_ENV !== 'production' && !process.env.VERCEL) {
+    app.listen(PORT,()=>{
+        console.log(`Server is Running on http://localhost:${PORT}`);
+    })
+}
 
+export default app;
 
